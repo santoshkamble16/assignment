@@ -1,61 +1,68 @@
-README.txt
+`README.txt`
 
-Tic Tac Toe - Python Implementation
-This is a simple text-based implementation of the classic Tic Tac Toe game, 
-where two players take turns to mark cells on a 3x3 grid. 
-The game ends when a player aligns three of their marks in a row, column, or diagonal, or when all cells are filled (resulting in a draw).
-
-How to Play
-Players:
-Player 1 uses X.
-Player 2 uses O.
-Gameplay:
-Players take turns entering the row and column numbers (0, 1, or 2) to mark their symbol on the board.
-A valid move must be in the range of 0–2 and must target an empty cell.
-Winning the Game:
-The first player to align three symbols in a row, column, or diagonal wins.
-Draw:
-If all cells are filled and no player wins, the game ends in a draw.
-Running the Program
-Prerequisites:
-Python 3.x installed on your system.
-Steps to Run:
-Clone or download this repository.
-Open a terminal and navigate to the folder containing the script.
-Run the program using the command:
-bash
-Copy code
-python tic_tac_toe.py
-Follow the on-screen instructions to play.
-Features
-Turn-based gameplay for two players.
-Input validation for row and column values.
-Automatic detection of a winner or a draw.
-User-friendly board display for easy tracking of the game state.
-Example Game
-markdown
-Copy code
-Welcome to Tic Tac Toe! Player X and Player O take turns.
-
-   |   |  
----------
-   |   |  
----------
-   |   |  
-
-Player X's turn.
-Enter row (0, 1, 2): 0
-Enter column (0, 1, 2): 1
-
-   | X |  
----------
-   |   |  
----------
-   |   |  
-Potential Enhancements
-Add an AI opponent for single-player mode.
-Create a graphical user interface using tkinter or pygame.
-Allow players to choose their symbols or alternate starting turns.
-....and continue!
+# Game of Tic-Tac-Toe  
+**Author:** Mr. Santosh Kamble  
 
 
+## **Introduction**
+This project implements the classic **Tic Tac Toe** game in two versions:  
+1. A **text-based version** using basic Python for terminal gameplay.  
+2. A **graphical version** using Pygame for an interactive experience.
+
+Both versions allow two players to play alternately until a winner is determined or the game ends in a draw.
+
+
+## **Project Directories**
+- **`text_based/`**  
+  Contains the **text-based Tic Tac Toe** implementation in Python.  
+  File: `tic_tac_toe_text.py`
+  
+- **`pygame_version/`**  
+  Contains the **graphical Tic Tac Toe** implementation using Pygame.  
+  File: `tic_tac_toe_pygame.py`
+
+
+## **How to Run the Game**
+
+### **1. Prerequisites**
+- **Python 3.x** installed on your system.  
+- Install Pygame for the graphical version:
+  ```bash
+  pip install pygame
+  ```
+
+### **2. Running the Text-Based Version**
+1. Navigate to the `text_based/` directory:
+   ```bash
+   cd text_based
+   ```
+2. Run the game:
+   ```bash
+   python tic_tac_toe_text.py
+   ```
+3. Follow the terminal prompts to play the game.
+
+### **3. Running the Graphical Version**
+1. Navigate to the `pygame_version/` directory:
+   ```bash
+   cd pygame_version
+   ```
+2. Run the game:
+   ```bash
+   python tic_tac_toe_pygame.py
+   ```
+3. Enjoy the interactive game by clicking on the cells to play.
+
+
+## **Features**
+
+### **Text-Based Version**
+- **Turn-Based Gameplay:** Players "X" and "O" take alternate turns.
+- **Winner Detection:** Automatically detects a winner or a draw.
+- **Input Validation:** Ensures valid input for row and column numbers.
+
+### **Graphical Version**
+- **Interactive Gameplay:** Players click on cells to place their marks.
+- **Smooth Graphics:** Uses Pygame to render a visually appealing grid and symbols.
+- **Automatic Restart:** Resets the game after a win or draw.
+- **Winner/Draw Announcement:** Displays a message before restarting.
